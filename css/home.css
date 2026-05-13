@@ -229,10 +229,9 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   font-weight: 700;
   letter-spacing: 0.03em;
   padding: 2px 0;
-  border-bottom: 1.5px solid rgba(255,255,255,0.45);
-  transition: border-color 0.25s ease, opacity 0.25s ease;
+  transition: opacity 0.25s ease;
 }
-.btn-cta:hover { opacity: 0.75; border-color: rgba(255,255,255,0.9); }
+.btn-cta:hover { opacity: 0.75; }
 
 
 
@@ -516,6 +515,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
  
   .treatments-grid { grid-template-columns: 1fr 1fr; }
+  .t-card--img     { display: none; }
   .t-card--link    { grid-column: span 2; }
   .container       { padding: 0 24px; }
 
