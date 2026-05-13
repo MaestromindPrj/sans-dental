@@ -1,7 +1,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --navy:      #2020CC;   
+  --navy:      #0b0082;   
   --navy-dark: #1818A8;   
   --white:     #FFFFFF;
   --off-white: rgba(255,255,255,0.55);  
