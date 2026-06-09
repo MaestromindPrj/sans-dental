@@ -1,0 +1,22 @@
+# All search engines and AI user agents are allowed to crawl
+User-agent: *
+Allow: /
+
+# Specifically allow major AI search and crawler engines
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Link to the sitemap file
+Sitemap: https://sansdentalstudio.com/sitemap.xml
