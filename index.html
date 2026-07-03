@@ -6,13 +6,22 @@
     <title>Sans Dental Studio - Home</title>
     <meta name="description" content="Experience clinical excellence and boutique dental care at Sans Dental Studio. Specializing in cosmetic dentistry, laser treatments, root canals, and orthodontic care in Thoraipakkam and Kancheepuram." />
     <meta name="keywords" content="Sans Dental Studio, Dentist Thoraipakkam, Dentist Kancheepuram, Cosmetic Dentistry, Laser Dentistry, Root Canal Treatment, Orthodontic Care, Dental Clinic Chennai" />
-    <link rel="icon" type="image/png" href="./assets/icons/logo.png?v=2">
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/png" href="./assets/icons/logo.png?v=2" />
+    <link rel="shortcut icon" type="image/png" href="./assets/icons/logo.png?v=2" />
+    <link rel="apple-touch-icon" href="./assets/icons/logo.png?v=2" />
     
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://sansdentalstudio.com/" />
     <meta property="og:title" content="Sans Dental Studio | Boutique Dental Care" />
     <meta property="og:description" content="Redefining your dental journey with compassion and precision. Visit us in Thoraipakkam or Kancheepuram for a confident, healthy smile." />
-    <meta property="og:image" content="https://sansdentalstudio.com/assets/images/hero-img.png" />
+    <meta property="og:image" content="https://sansdentalstudio.com/assets/icons/logo.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Sans Dental Studio Logo" />
+    <meta property="og:site_name" content="Sans Dental Studio" />
+    <meta property="og:locale" content="en_IN" />
 
     
     <meta property="twitter:card" content="summary_large_image" />
@@ -32,10 +41,32 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Sans Dental Studio",
+      "url": "https://sansdentalstudio.com/",
+      "description": "Experience clinical excellence and boutique dental care at Sans Dental Studio in Thoraipakkam and Kancheepuram.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://sansdentalstudio.com/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
       "@type": "Dentist",
       "name": "Sans Dental Studio",
-      "image": "https://sansdentalstudio.com/assets/images/hero-img.png",
-      "logo": "https://sansdentalstudio.com/assets/icons/logo.png",
+      "image": "https://sansdentalstudio.com/assets/icons/logo.png",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sansdentalstudio.com/assets/icons/logo.png",
+        "width": 512,
+        "height": 512
+      },
       "@id": "https://sansdentalstudio.com/#dentist",
       "url": "https://sansdentalstudio.com/",
       "telephone": "+919941055547",
