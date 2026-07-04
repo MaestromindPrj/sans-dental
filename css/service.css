@@ -75,7 +75,7 @@ body {
 }
 
 .nav-logo-img {
-  height: 48px;
+  height: 60px;
   width: auto;
   object-fit: contain;
 }
@@ -407,9 +407,7 @@ body {
   }
 }
 
-/* =========================
-   SERVICE PAGE
-========================= */
+
 .service-section {
   background: #ffffff;
   width: 100%;
@@ -421,26 +419,25 @@ body {
   padding: 0 40px;
 }
 
-/* Header */
+
 .service-header {
   text-align: center;
   margin-top: 125px;
   margin-bottom: 80px;
 }
 
-.service-header h2 {
-  font-size: 48px;
-  font-weight: 700;
-  color: #000;
-  margin-bottom: 24px;
+.service-header h1{
+  font-size: 32px;
+    padding-bottom: 12px;
 }
 
 .service-header p {
-  font-size: 18px;
+
+  font-size: 15px;
   color: #333;
   max-width: 750px;
   margin: 0 auto;
-  line-height: 1.3;
+  line-height: 1.5;
 }
 
 /* Service Cards Layout */
@@ -452,11 +449,10 @@ body {
   gap: 40px;
 }
 
-/* Service Card */
 .service-card {
   background: #f6f6f6;
   width: 246px;
-  height: 250px;
+  height: 220px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -466,7 +462,7 @@ body {
 /* Image Card */
 .image-card {
   width: 246px;
-  height: 250px;
+  height: 220px;
   overflow: hidden;
 }
 
@@ -478,7 +474,8 @@ body {
 
 /* Typography */
 .service-card h3 {
-  font-size: 24px;
+  padding-top: 16px;
+  font-size: 20px;
   font-weight: 600;
   color: #000;
   margin-bottom: 16px;
@@ -486,7 +483,7 @@ body {
 }
 
 .service-card p {
-  font-size: 18px;
+  font-size: 15px;
   color: #000;
   line-height: 1.3;
   font-weight: 500;
