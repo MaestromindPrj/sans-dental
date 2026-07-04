@@ -1,32 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://sansdentalstudio.com/</loc>
-    <lastmod>2026-07-03</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://sansdentalstudio.com/assets/images/hero-img.png</image:loc>
+      <image:title>Sans Dental Studio – Boutique Dental Clinic Thoraipakkam Chennai</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://sansdentalstudio.com/pages/about.html</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://sansdentalstudio.com/assets/images/profile.png</image:loc>
+      <image:title>Dr. Hamsapriya R – Dentist at Sans Dental Studio Thoraipakkam</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://sansdentalstudio.com/pages/service.html</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://sansdentalstudio.com/pages/gallery.html</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://sansdentalstudio.com/assets/images/gallery-img1.png</image:loc>
+      <image:title>Sans Dental Studio Clinic Interior – Thoraipakkam Chennai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sansdentalstudio.com/assets/images/gallery-img2.png</image:loc>
+      <image:title>Sans Dental Studio Waiting Area</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sansdentalstudio.com/assets/images/gallery-img3.png</image:loc>
+      <image:title>Dental Treatment Room at Sans Dental Studio</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://sansdentalstudio.com/assets/images/gallery-img4.png</image:loc>
+      <image:title>Reception Desk at Sans Dental Studio</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://sansdentalstudio.com/pages/contact.html</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
