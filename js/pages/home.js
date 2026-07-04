@@ -62,3 +62,23 @@
   render();
 })();
 
+
+(function () {
+  const slider = document.querySelector('.before-after-slider');
+  if (!slider) return;
+
+  const sliderInput = slider.querySelector('.slider-input');
+  
+  function updateSlider(value) {
+    slider.style.setProperty('--position', `${value}%`);
+  }
+
+  sliderInput.addEventListener('input', (e) => {
+    updateSlider(e.target.value);
+  });
+
+  // Initialize value in case of page reload/browser autofill cache
+  updateSlider(sliderInput.value);
+})();
+
+

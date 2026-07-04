@@ -84,7 +84,7 @@ body {
   color: var(--white);
   text-decoration: none;
   letter-spacing: 0.02em;
-  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s ease;
   white-space: nowrap;
   display: inline-block;
 }
@@ -93,10 +93,12 @@ body {
 .nav-link:hover {
   opacity: 1;
   transform: translateY(-2px);
+  color: #E7BE1A;
 }
 
 .nav-link.active {
   font-weight: 700;
+  color: #E7BE1A;
 }
 
 
@@ -202,12 +204,12 @@ body {
   .nav-link:not(.active) { opacity: 1; }
 
   .nav-link.active {
-    color: var(--white);
+    color: #E7BE1A;
     font-weight: 700;
   }
 
   .nav-link:hover {
-    color: var(--white);
+    color: #E7BE1A;
     transform: scale(1.04);
     opacity: 1;
   }
@@ -295,7 +297,7 @@ body {
 
 .footer-nav a:hover,
 .footer-quick a:hover {
-  color: var(--white);
+  color: #E7BE1A;
 }
 
 
@@ -432,6 +434,11 @@ body {
   display: flex;
   align-items: center;
   gap: 24px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.contact-card:hover {
+  border-color: #E7BE1A;
+  box-shadow: 0 4px 20px rgba(231, 190, 26, 0.05);
 }
 
 /* =========================
@@ -446,6 +453,10 @@ body {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  transition: background-color 0.25s ease;
+}
+.contact-card:hover .contact-icon:not(.white-icon) {
+  background-color: #E7BE1A;
 }
 
 .contact-icon img {
