@@ -802,6 +802,7 @@ img {
   width: 48px;
   height: 48px;
   display: block;
+  object-fit: contain;
 }
 
 .footer-bottom {
