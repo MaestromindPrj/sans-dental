@@ -774,7 +774,7 @@ body {
     grid-template-columns: 1fr;
     padding: 0 24px;
     gap: 36px;
-    text-align: center;
+    text-align: left;
   }
 
   .doctor-photo-wrap {
@@ -790,11 +790,11 @@ body {
   }
 
   .doctor-rating {
-    justify-content: center;
+    justify-content: left;
   }
 
   .doctor-badges {
-    justify-content: center;
+    justify-content: left;
   }
   .why-section {
     padding: 60px 24px;
