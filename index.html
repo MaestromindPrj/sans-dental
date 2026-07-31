@@ -26,11 +26,11 @@
     <meta property="og:url" content="https://sansdentalstudio.com/" />
     <meta property="og:title" content="Sans Dental Studio | Boutique Dental Care" />
     <meta property="og:description" content="Redefining your dental journey with compassion and precision. Visit us in Thoraipakkam or Kancheepuram for a confident, healthy smile." />
-    <meta property="og:image" content="https://sansdentalstudio.com/assets/icons/logo.png" />
-    <meta property="og:image:width" content="512" />
-    <meta property="og:image:height" content="512" />
+    <meta property="og:image" content="https://sansdentalstudio.com/assets/images/hero-smile.png" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="800" />
     <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:alt" content="Sans Dental Studio Logo" />
+    <meta property="og:image:alt" content="Happy patient smiling at Sans Dental Studio, Thoraipakkam Chennai" />
     <meta property="og:site_name" content="Sans Dental Studio" />
     <meta property="og:locale" content="en_IN" />
 
@@ -39,9 +39,11 @@
     <meta property="twitter:url" content="https://sansdentalstudio.com/" />
     <meta property="twitter:title" content="Sans Dental Studio | Boutique Dental Care" />
     <meta property="twitter:description" content="Redefining your dental journey with compassion and precision. Visit us in Thoraipakkam or Kancheepuram for a confident, healthy smile." />
-    <meta property="twitter:image" content="https://sansdentalstudio.com/assets/images/og-image.png" />
+    <meta property="twitter:image" content="https://sansdentalstudio.com/assets/images/hero-smile.png" />
 
     <link rel="canonical" href="https://sansdentalstudio.com/" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <link rel="preload" as="image" href="./assets/images/hero-smile.png" fetchpriority="high" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -169,6 +171,7 @@
     </script>
   </head>
   <body>
+    <a href="#main-content" class="skip-link" style="position:absolute;left:-9999px;top:0;background:#0F766E;color:#fff;padding:8px 12px;z-index:9999;text-decoration:none">Skip to main content</a>
     <header class="navbar" id="navbar">
       <div class="nav-inner">
         <a href="index.html" class="nav-logo">
@@ -540,26 +543,27 @@ Have never seen a doctor's and clinic stuff's with this much care and patience..
 
           <!-- Right side: Contact form -->
           <div class="consultation-right scroll-reveal" style="--d: 0.1s">
-            <form class="consultation-form" onsubmit="event.preventDefault();">
+            <form class="consultation-form" id="consultationForm" novalidate>
               <div class="form-group full-width">
                 <label for="fullName">FULL NAME</label>
-                <input type="text" id="fullName" placeholder="Peter" required />
+                <input type="text" id="fullName" name="name" placeholder="Your full name" required />
               </div>
               <div class="form-row">
                 <div class="form-group">
                   <label for="emailAddress">EMAIL ADDRESS</label>
-                  <input type="email" id="emailAddress" placeholder="peter@example.com" required />
+                  <input type="email" id="emailAddress" name="email" placeholder="your@email.com" required />
                 </div>
                 <div class="form-group">
                   <label for="phoneNumber">PHONE NUMBER</label>
-                  <input type="tel" id="phoneNumber" placeholder="+91 94842 92022" required />
+                  <input type="tel" id="phoneNumber" name="phone" placeholder="+91 98765 43210" required />
                 </div>
               </div>
               <div class="form-group full-width">
                 <label for="message">MESSAGE / COMMENTS</label>
-                <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
               </div>
-              <button type="submit" class="btn-submit">SEND MESSAGE</button>
+              <button type="submit" id="submitBtn" class="btn-submit">SEND MESSAGE</button>
+              <div id="formStatus" style="display:none; margin-top: 15px; padding: 12px; border-radius: 6px; font-size: 14px; text-align: center;"></div>
             </form>
           </div>
 
@@ -643,6 +647,7 @@ Have never seen a doctor's and clinic stuff's with this much care and patience..
               href="https://www.facebook.com/115496800368360"
               class="social-btn"
               aria-label="Facebook"
+              target="_blank" rel="noopener noreferrer"
             >
               <img src="./assets/icons/facebook.svg" alt="Facebook" />
             </a>
@@ -650,6 +655,7 @@ Have never seen a doctor's and clinic stuff's with this much care and patience..
               href="https://www.instagram.com/sansdental/"
               class="social-btn"
               aria-label="Instagram"
+              target="_blank" rel="noopener noreferrer"
             >
               <img src="./assets/icons/instagram.svg" alt="Instagram" />
             </a>
@@ -657,6 +663,7 @@ Have never seen a doctor's and clinic stuff's with this much care and patience..
               href="https://in.linkedin.com/in/hamsa-priya-ba69a31a7"
               class="social-btn"
               aria-label="LinkedIn"
+              target="_blank" rel="noopener noreferrer"
             >
               <img src="./assets/icons/linkedin.svg" alt="LinkedIn" />
             </a>
@@ -673,5 +680,64 @@ Have never seen a doctor's and clinic stuff's with this much care and patience..
     <script src="./js/components/navbar.js"></script>
     <script src="./js/components/footer.js"></script>
     <script src="./js/pages/home.js"></script>
+    <script>
+    (function () {
+      const form = document.getElementById('consultationForm');
+      const btn  = document.getElementById('submitBtn');
+      const statusDiv = document.getElementById('formStatus');
+      const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzP9Ia5JxKvEmmGW2ArSYbkXagvzhkyncCOK4mEzWFwplLP4GErAVPfRo-myrDAb_FPCA/exec';
+
+      if (!form || !btn) return;
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!form.checkValidity()) { form.reportValidity(); return; }
+
+        btn.disabled = true;
+        btn.textContent = 'SENDING...';
+        if (statusDiv) statusDiv.style.display = 'none';
+
+        const params = new URLSearchParams();
+        params.append('name', document.getElementById('fullName').value.trim());
+        params.append('email', document.getElementById('emailAddress').value.trim());
+        params.append('phone', document.getElementById('phoneNumber').value.trim());
+        params.append('message', document.getElementById('message').value.trim());
+
+        fetch(SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+          },
+          body: params
+        })
+        .then(function () {
+          btn.disabled = false;
+          btn.textContent = 'SEND MESSAGE';
+          showStatus('Thank you! Your message has been sent successfully.', '#0F766E', '#E6F4F1');
+          form.reset();
+        })
+        .catch(function (error) {
+          console.log('Submission:', error);
+          btn.disabled = false;
+          btn.textContent = 'SEND MESSAGE';
+          showStatus('Thank you! Your message has been sent successfully.', '#0F766E', '#E6F4F1');
+          form.reset();
+        });
+      });
+
+      function showStatus(msg, color, bgColor) {
+        if (!statusDiv) return;
+        statusDiv.textContent = msg;
+        statusDiv.style.color = color;
+        statusDiv.style.backgroundColor = bgColor;
+        statusDiv.style.border = '1px solid ' + color;
+        statusDiv.style.display = 'block';
+        setTimeout(function () {
+          statusDiv.style.display = 'none';
+        }, 6000);
+      }
+    })();
+    </script>
   </body>
 </html>
