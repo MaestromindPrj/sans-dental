@@ -168,7 +168,7 @@
   <body>
     <header class="navbar" id="navbar">
       <div class="nav-inner">
-        <a href="/index.html" class="nav-logo"> 
+        <a href="index.html" class="nav-logo">
           <img src="./assets/icons/logo.png?v=2" alt="Sans Dental Studio" class="nav-logo-img" />
         </a>
 
@@ -192,30 +192,62 @@
 
     <main id="main-content">
     <section class="hero" id="hero" aria-label="Hero – Best Dentist in Thoraipakkam and Kancheepuram">
-      <div class="hero-bg" role="img" aria-label="Sans Dental Studio clinic interior"></div>
-      <div class="hero-overlay"></div>
-      <div class="hero-inner">
-        <div class="hero-top">
+      <div class="hero-grid">
+        <div class="hero-left">
           <h1 class="hero-title">
-            <span class="word"
-              >Your Dream Smile Is
-              <br class="hero-br" />
-              Closer Than You Think</span
-            >
+            Your Dream Smile<br />
+            Is Closer Than<br />
+            You Think
           </h1>
-        </div>
-        <div class="hero-bottom reveal-fade">
-          <div class="hero-location">
-            <p class="visit-label">Visit Us:</p>
-            <p class="visit-place">Thoraipakkam, Chennai</p>
-            <p class="visit-place">Kancheepuram</p>
-          </div>
-          <div class="hero-right">
+          <div class="hero-bottom-content">
             <p class="hero-desc">
-              From Routine Checkups To Full Smile Makeovers – Expert Dental Care by Dr. Hamsapriya R,
-              All In One Boutique Clinic.
+              From Routine Care To Full Smile Makeovers - Everything You Need For A Confident, Healthy Smile, All In One Place.
             </p>
-            <a href="./pages/contact.html" class="btn-cta" aria-label="Book a dental appointment at Sans Dental Studio">[ Book Appointment Today → ]</a>
+            <div class="hero-bottom-row">
+              <a href="./pages/contact.html" class="btn-cta-dark" aria-label="Get Started Today at Sans Dental Studio">Get Started Today &rarr;</a>
+              <div class="hero-locations">
+                <span>Thoraipakkam</span>
+                <span>Kancheepuram</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-right">
+          <img src="./assets/images/hero-smile.png" alt="Happy patient smiling - Sans Dental Studio" class="hero-portrait-img" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about-snippet" id="about-snippet" aria-label="About Sans Dental Studio">
+      <div class="container">
+        <div class="about-snippet-grid">
+          <div class="about-snippet-left scroll-reveal">
+            <p class="about-snippet-eyebrow">About Us</p>
+            <h2 class="about-snippet-title">Committed To Your Comfort &amp; Lasting Results</h2>
+            <p class="about-snippet-desc">
+              From Routine Checkups To Advanced Dental Treatments, We're Committed To Providing Comfortable Care And Lasting Results.
+            </p>
+            <a href="./pages/about.html" class="about-snippet-cta">Learn More &rarr; </a>
+          </div>
+          <div class="about-snippet-right">
+            <div class="stats-grid">
+              <div class="stat-card scroll-reveal" style="--d: 0.05s">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Years Of Trusted Clinical Excellence</span>
+              </div>
+              <div class="stat-card scroll-reveal" style="--d: 0.1s">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Patient Satisfaction Built On Comfort &amp; Results</span>
+              </div>
+              <div class="stat-card scroll-reveal" style="--d: 0.15s">
+                <span class="stat-number">10k+</span>
+                <span class="stat-label">Smiles Strengthened With Quality Dental Care</span>
+              </div>
+              <div class="stat-card scroll-reveal" style="--d: 0.2s">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Personalized Treatment For Every Patient Need</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -223,7 +255,10 @@
 
     <section class="treatments" id="treatments" aria-label="Our Dental Treatments">
       <div class="container">
-        <h2 class="section-title scroll-reveal">Our Treatments</h2>
+        <div class="treatments-header scroll-reveal">
+          <h2 class="section-title">OUR TREATMENTS</h2>
+          <a href="./pages/service.html" class="btn-explore">Explore All &rarr;</a>
+        </div>
         <div class="treatments-grid">
           <div class="t-card scroll-reveal" style="--d: 0.05s">
             <h3>Cosmetic Dentistry</h3>
@@ -234,22 +269,6 @@
           </div>
 
           <div class="t-card scroll-reveal" style="--d: 0.1s">
-            <h3>Ultrasonic Scaling</h3>
-            <p>
-              Our Ultrasonic Scaling Removes Stubborn Buildup And Keeps Your
-              Gums Healthy, Comfortably And Efficiently
-            </p>
-          </div>
-
-          <div class="t-card t-card--img scroll-reveal" style="--d: 0.15s">
-            <img
-              src="./assets/images/testimonial1.png"
-              alt="Happy smiling patient at Sans Dental Studio"
-              loading="lazy"
-            />
-          </div>
-
-          <div class="t-card scroll-reveal" style="--d: 0.2s">
             <h3>Laser Dentistry</h3>
             <p>
               Our Laser Treatments Are Minimally Invasive, Faster To Heal, And
@@ -257,23 +276,15 @@
             </p>
           </div>
 
-          <div class="t-card t-card--img scroll-reveal" style="--d: 0.05s">
-            <img
-              src="./assets/images/testimonial2.png"
-              alt="Professional dental procedure at Sans Dental Studio"
-              loading="lazy"
-            />
-          </div>
-
-          <div class="t-card scroll-reveal" style="--d: 0.1s">
-            <h3>Orthodontic Care</h3>
+          <div class="t-card scroll-reveal" style="--d: 0.15s">
+            <h3>Ultrasonic Scaling</h3>
             <p>
-              We Offer Expert Alignment Solution For Teens And Adults That Fit
-              Seamlessly Into Your Lifestyle
+              Our Ultrasonic Scaling Removes Stubborn Buildup And Keeps Your
+              Gums Healthy, Comfortably And Efficiently
             </p>
           </div>
 
-          <div class="t-card scroll-reveal" style="--d: 0.15s">
+          <div class="t-card scroll-reveal" style="--d: 0.2s">
             <h3>Root Canals</h3>
             <p>
               We Use Gentle Techniques To Relieve Your Pain, Save Your Natural
@@ -281,8 +292,20 @@
             </p>
           </div>
 
-          <div class="t-card t-card--link scroll-reveal" style="--d: 0.2s">
-            <a href="./pages/service.html" class="see-details">[ See Full Details → ]</a>
+          <div class="t-card scroll-reveal" style="--d: 0.25s">
+            <h3>Periodontal Treatment</h3>
+            <p>
+              We Provide Specialized Care That Stops Gum Disease In Its Tracks And
+              Protects The Foundation Of Your Smile
+            </p>
+          </div>
+
+          <div class="t-card scroll-reveal" style="--d: 0.3s">
+            <h3>Dental Whitening</h3>
+            <p>
+              Our Professional Whitening Treatments Deliver Long-Lasting
+              Results That Over-The-Counter Products Simply Can't Match
+            </p>
           </div>
         </div>
       </div>
@@ -429,6 +452,151 @@ Have never seen a doctor's and clinic stuff's with this much care and patience..
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section" aria-label="Our Clinical Gallery">
+      <div class="container">
+        <div class="gallery-header scroll-reveal">
+          <h2 class="gallery-title">Our Gallery</h2>
+          <div class="gallery-nav">
+            <button class="gallery-btn" id="galleryPrevBtn" aria-label="Previous image">&#8249;</button>
+            <button class="gallery-btn" id="galleryNextBtn" aria-label="Next image">&#8250;</button>
+          </div>
+        </div>
+        <div class="gallery-wrapper">
+          <div class="gallery-track" id="galleryTrack">
+            <div class="gallery-card scroll-reveal" style="--d: 0.05s">
+              <img src="./assets/images/gallery1.png" alt="Clinical Examination at Sans Dental Studio" loading="lazy" />
+              <span class="gallery-badge">Clinical Examination</span>
+            </div>
+            <div class="gallery-card scroll-reveal" style="--d: 0.1s">
+              <img src="./assets/images/gallery2.png" alt="Cavity Assessment at Sans Dental Studio" loading="lazy" />
+              <span class="gallery-badge">Cavity Assessment</span>
+            </div>
+            <div class="gallery-card scroll-reveal" style="--d: 0.15s">
+              <img src="./assets/images/gallery3.png" alt="Isolation For Treatment at Sans Dental Studio" loading="lazy" />
+              <span class="gallery-badge">Isolation For Treatment</span>
+            </div>
+            <div class="gallery-card scroll-reveal" style="--d: 0.2s">
+              <img src="./assets/images/gallery4.png" alt="Tooth Preparation at Sans Dental Studio" loading="lazy" />
+              <span class="gallery-badge">Tooth Preparation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="consultation-section" aria-label="Schedule Your Consultation">
+      <div class="container">
+        <div class="consultation-grid">
+          
+
+          <div class="consultation-left scroll-reveal">
+            <h2 class="consultation-heading">Schedule Your Consultation</h2>
+            <div class="contact-cards">
+              
+              <div class="contact-card">
+                <div class="contact-icon"><img src="./assets/icons/phone.svg" alt="Phone icon"></div>
+                <div class="contact-info">
+                  <span>Phone</span>
+                  <h2><a href="tel:+919941055547" style="color:inherit;text-decoration:none">+91 9941055547</a></h2>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon"><img src="./assets/icons/email.svg" alt="Email icon"></div>
+                <div class="contact-info">
+                  <span>Email</span>
+                  <h2><a href="mailto:sansdentalstudio@gmail.com" style="color:inherit;text-decoration:none">sansdentalstudio@gmail.com</a></h2>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon"><img src="./assets/icons/location.svg" alt="Location pin icon"></div>
+                <div class="contact-info">
+                  <span>Address</span>
+                  <address style="font-style:normal">
+                    <h2>No 429, 1st floor Sri Vidhya Avenue,<br>Thoraipakkam, Kanchipuram 600097</h2>
+                  </address>
+                </div>
+              </div>
+
+              <div class="contact-card timing-card">
+                <div class="contact-icon white-icon"><img src="./assets/icons/time.svg" alt="OPD Timings"></div>
+                <div class="contact-info">
+                  <span>OPD Timings</span>
+                  <h3 style="display: flex;align-items: flex-end;">Mon-Sat, &nbsp;<div class="timetext">10:00 AM - 2:00 PM</div></h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right side: Contact form -->
+          <div class="consultation-right scroll-reveal" style="--d: 0.1s">
+            <form class="consultation-form" onsubmit="event.preventDefault();">
+              <div class="form-group full-width">
+                <label for="fullName">FULL NAME</label>
+                <input type="text" id="fullName" placeholder="Peter" required />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="emailAddress">EMAIL ADDRESS</label>
+                  <input type="email" id="emailAddress" placeholder="peter@example.com" required />
+                </div>
+                <div class="form-group">
+                  <label for="phoneNumber">PHONE NUMBER</label>
+                  <input type="tel" id="phoneNumber" placeholder="+91 94842 92022" required />
+                </div>
+              </div>
+              <div class="form-group full-width">
+                <label for="message">MESSAGE / COMMENTS</label>
+                <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+              </div>
+              <button type="submit" class="btn-submit">SEND MESSAGE</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" aria-label="Frequently Asked Questions">
+      <div class="faq-container">
+        <h2 class="faq-section-title scroll-reveal">Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <details class="faq-item scroll-reveal" style="--d: 0.05s" open>
+            <summary class="faq-question">What dental treatments does Sans Dental Studio offer?</summary>
+            <div class="faq-answer">
+              <p>Sans Dental Studio provides a wide range of boutique dental treatments, including Cosmetic Dentistry, Ultrasonic Scaling, Laser Dentistry, Orthodontic Care, Root Canal Treatment, Dentures, Periodontal Care, Dental Implants, and Professional Teeth Whitening.</p>
+            </div>
+          </details>
+          <details class="faq-item scroll-reveal" style="--d: 0.1s">
+            <summary class="faq-question">What are the safety measures adopted by Sans Dental Studio?</summary>
+            <div class="faq-answer">
+              <p>Sans Dental has adopted world-class measures to ensure the safety of patients. Our trademarked Stringent 4 step sterilisation process is a testimony to our commitment to high standards of safety & sterilisation. We have enhanced our safety protocols under WHO Guidelines in response to the COVID crisis and are now operating with 10X safety protocols. Our Clinic is now deployed with new state of the art equipment- Aerosol Suction & Decontamination Unit (ASDU) & Constant Fumigation Device (CFD) to effectively manage any aerosols or contaminants in the clinic premises. We follow a zero-compromise policy when it comes to safety & hygiene. This ensures a completely sterile & hygienic environment.</p>
+            </div>
+          </details>
+          <details class="faq-item scroll-reveal" style="--d: 0.15s">
+            <summary class="faq-question">Who is the dentist at Sans Dental Studio?</summary>
+            <div class="faq-answer">
+              <p>Sans Dental Studio is led by Dr. Hamsapriya R, a highly experienced general and cosmetic dentist with over 15 years of clinical expertise. Dr. Hamsapriya R is BDS qualified and specializes in crafting personalized, compassionate dental solutions.</p>
+            </div>
+          </details>
+          <details class="faq-item scroll-reveal" style="--d: 0.2s">
+            <summary class="faq-question">What are the locations and timings of Sans Dental Studio?</summary>
+            <div class="faq-answer">
+              <p>Sans Dental Studio has clinics in Thoraipakkam and Kancheepuram (Chennai, India). Our clinic timings are Monday to Saturday from 10:00 AM to 2:00 PM. You can contact us at +91 9941055547 to schedule an appointment. However, in the case of unforeseen situations, the timing may differ on that particular day.</p>
+            </div>
+          </details>
+          <details class="faq-item scroll-reveal" style="--d: 0.25s">
+            <summary class="faq-question">How frequently should I visit a dentist?</summary>
+            <div class="faq-answer">
+              <p>The frequency of a visit to a dentist depends on the condition of your oral health. It is advised that people must visit a dentist at least once in six months for regular dental check-ups. However, people with dental problems must visit once in three months or as directed by the dentists.</p>
+            </div>
+          </details>
         </div>
       </div>
     </section>

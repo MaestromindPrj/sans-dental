@@ -7,8 +7,8 @@
 }
 
 :root {
-  --navy: #571221;
-  --navy-dark: #571221;
+  --navy: #0F766E;
+  --navy-dark: #0F766E;
   --white: #ffffff;
   --off-white: rgba(255, 255, 255, 0.55);
   --text-dark: #111111;
@@ -23,7 +23,7 @@ html {
 
 body {
   font-family: var(--font);
-  background: #ffffff;
+  background: #f9f9f9;
   color: var(--text-dark);
   min-height: 100vh;
 }
@@ -102,14 +102,11 @@ body {
   opacity: 0.85;
 }
 .nav-link:hover {
-  opacity: 1;
-  transform: translateY(-2px);
-  color: #ffb310;
+  color: #ffffff;
 }
-
 .nav-link.active {
   font-weight: 700;
-  color: #ffb310;
+  color: #ffffff;
 }
 
 .menu-toggle {
@@ -225,14 +222,12 @@ body {
   }
 
   .nav-link.active {
-    color: #ffb310;
-    font-weight: 700;
+    color: #ffffff;
   }
 
   .nav-link:hover {
-    color: #ffb310;
+    color: #ffffff;
     transform: scale(1.04);
-    opacity: 1;
   }
 
   .nav-links.open .nav-link {
@@ -327,7 +322,7 @@ body {
 
 .footer-nav a:hover,
 .footer-quick a:hover {
-  color: #ffb310;
+  color: #ffffff;
 }
 
 .social-icons {
@@ -417,7 +412,7 @@ body {
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #ffb310;
+  color: #0F766E;
   margin-bottom: 20px;
 }
 
@@ -453,7 +448,7 @@ body {
     color 0.2s ease;
 }
 .about-hero-cta:hover {
-  color: #ffb310;
+  color: #0F766E;
 }
 
 .about-hero-image {
@@ -514,13 +509,13 @@ body {
 
 .doctor-rating-star {
   font-size: 18px;
-  color: #ffb310;
+  color: #ffffff;
 }
 
 .doctor-rating-text {
   font-size: 14px;
   letter-spacing: 0.04em;
-  color: #ffb310;
+  color: #ffffff;
 }
 
 .doctor-name {
@@ -556,7 +551,7 @@ body {
 }
 
 .doctor-badge {
-  background-color: #ffb310;
+  background-color: #ffffff;
   padding: 16px 15px;
   border-radius: 4px;
   min-width: 180px;
@@ -579,7 +574,7 @@ body {
 }
 
 .why-section {
-  background: #ffffff;
+  background: #f9f9f9;
   padding: 96px 60px;
 }
 
@@ -605,8 +600,8 @@ body {
 }
 
 .why-card {
-  background: var(--white);
-  border: 1px solid rgba(32, 32, 204, 0.1);
+  background: rgba(207, 228, 226, 0.5);
+  border: 1px solid rgba(15, 118, 110, 0.1);
   border-radius: 8px;
   padding: 48px 36px;
   text-align: center;

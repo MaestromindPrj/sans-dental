@@ -7,8 +7,8 @@
 }
 
 :root {
-  --navy: #571221;
-  --navy-dark: #571221;
+  --navy: #0F766E;
+  --navy-dark: #0F766E;
   --white: #ffffff;
   --off-white: rgba(255, 255, 255, 0.55);
   --text-dark: #111111;
@@ -104,12 +104,12 @@ body {
 .nav-link:hover {
   opacity: 1;
   transform: translateY(-2px);
-  color: #ffb310;
+  color: #ffffff;
 }
 
 .nav-link.active {
   font-weight: 700;
-  color: #ffb310;
+  color: #ffffff;
 }
 
 .menu-toggle {
@@ -225,12 +225,11 @@ body {
   }
 
   .nav-link.active {
-    color: #ffb310;
-    font-weight: 700;
+    color: #ffffff;
   }
 
   .nav-link:hover {
-    color: #ffb310;
+    color: #ffffff;
     transform: scale(1.04);
     opacity: 1;
   }
@@ -327,7 +326,7 @@ body {
 
 .footer-nav a:hover,
 .footer-quick a:hover {
-  color: #ffb310;
+  color: #ffffff;
 }
 
 .social-icons {

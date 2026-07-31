@@ -64,6 +64,56 @@
 
 
 (function () {
+  const track   = document.getElementById('galleryTrack');
+  const prevBtn = document.getElementById('galleryPrevBtn');
+  const nextBtn = document.getElementById('galleryNextBtn');
+  if (!track || !prevBtn || !nextBtn) return;
+
+  let idx = 0;
+
+  function visibleCount() {
+    const w = window.innerWidth;
+    if (w <= 600)  return 1;
+    if (w <= 900)  return 2;
+    return 3;
+  }
+
+  function cardPx() {
+    const n   = visibleCount();
+    const gap = 24;
+    return (track.parentElement.offsetWidth - gap * (n - 1)) / n;
+  }
+
+  function render() {
+    const cards = track.querySelectorAll('.gallery-card');
+    const n     = visibleCount();
+    const max   = Math.max(0, cards.length - n);
+    idx = Math.min(idx, max);
+
+    const w = cardPx();
+    cards.forEach(c => {
+      c.style.flex = `0 0 ${w}px`;
+      c.style.minWidth = `${w}px`;
+    });
+
+    track.style.transform = `translateX(-${idx * (w + 24)}px)`;
+
+    prevBtn.style.opacity = idx === 0   ? '0.35' : '1';
+    nextBtn.style.opacity = idx >= max  ? '0.35' : '1';
+  }
+
+  prevBtn.addEventListener('click', () => { if (idx > 0) { idx--; render(); } });
+  nextBtn.addEventListener('click', () => {
+    const max = Math.max(0, track.querySelectorAll('.gallery-card').length - visibleCount());
+    if (idx < max) { idx++; render(); }
+  });
+
+  window.addEventListener('resize', render, { passive: true });
+  render();
+})();
+
+
+(function () {
   const slider = document.querySelector('.before-after-slider');
   if (!slider) return;
 

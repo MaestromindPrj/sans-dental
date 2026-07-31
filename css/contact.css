@@ -7,8 +7,8 @@
 }
 
 :root {
-  --navy: #571221;
-  --navy-dark: #571221;
+  --navy: #0F766E;
+  --navy-dark: #0F766E;
   --white: #ffffff;
   --off-white: rgba(255, 255, 255, 0.55);
   --text-dark: #111111;
@@ -106,12 +106,12 @@ body {
 .nav-link:hover {
   opacity: 1;
   transform: translateY(-2px);
-  color: #ffb310;
+  color: #ffffff;
 }
 
 .nav-link.active {
   font-weight: 700;
-  color: #ffb310;
+  color: #ffffff;
 }
 
 .menu-toggle {
@@ -233,12 +233,11 @@ body {
   }
 
   .nav-link.active {
-    color: #ffb310;
-    font-weight: 700;
+    color: #ffffff;
   }
 
   .nav-link:hover {
-    color: #ffb310;
+    color: #ffffff;
     transform: scale(1.04);
     opacity: 1;
   }
@@ -336,7 +335,7 @@ body {
 
 .footer-nav a:hover,
 .footer-quick a:hover {
-  color: #ffb310;
+  color: #ffffff;
 }
 
 .social-icons {
@@ -463,15 +462,15 @@ body {
     box-shadow 0.25s ease;
 }
 .contact-card:hover {
-  border-color: #ffb310;
-  box-shadow: 0 4px 20px rgba(231, 190, 26, 0.05);
+  border-color: #0F766E;
+  box-shadow: 0 4px 20px rgba(15, 118, 110, 0.08);
 }
 
 
 .contact-icon {
   width: 50px;
   height: 50px;
-  background: #571221;
+  background: #0F766E;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -525,13 +524,13 @@ body {
 }
 
 .white-icon{
-  background-color:#ffb310;
+  background-color:#ffffff;
 }
 
 .timing-card .contact-info span,
 .timing-card .contact-info h3,
 .timing-card .contact-info p {
-  color: #ffb310;
+  color: #ffffff;
 }
 
 .timetext{
