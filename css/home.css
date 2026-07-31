@@ -53,6 +53,10 @@ img {
   object-fit: cover;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 .container {
   width: 100%;
   max-width: 1140px;
@@ -837,9 +841,40 @@ img {
     margin-bottom: 20px;
   }
 
+  
+  .consultation-section {
+    width: 100% !important;
+    padding: 40px 0 !important;
+    box-sizing: border-box !important;
+    overflow: hidden;
+  }
+  .consultation-section .container {
+    padding: 0 16px !important;
+  }
   .consultation-heading {
     font-size: 22px !important;
     white-space: normal;
+  }
+  .consultation-left,
+  .consultation-right,
+  .consultation-grid,
+  .contact-cards,
+  .contact-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .consultation-left .contact-card {
+    padding: 16px 12px;
+    gap: 12px;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+  .consultation-left .contact-info h2, 
+  .consultation-left .contact-info h3 {
+    font-size: 13px !important;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
   .consultation-right {
     padding: 20px 16px;
@@ -1424,18 +1459,24 @@ img {
   padding: 36px 32px;
   margin-top: 0;
   align-self: flex-start;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .consultation-form {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .form-row {
@@ -1498,6 +1539,7 @@ img {
   }
   .form-row {
     grid-template-columns: 1fr;
+    gap: 25px;
   }
 }
 
