@@ -472,3 +472,42 @@ body {
     min-height: 160px;
   }
 }
+
+.clinical-card {
+  position: relative;
+}
+
+.gallery-badge {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background: #0F766E;
+  color: #ffffff;
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  letter-spacing: 0.01em;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+/* Animations */
+.scroll-reveal, .reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.scroll-reveal.visible, .reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1 { --d: 0.1s; transition-delay: var(--d); }
+.delay-2 { --d: 0.2s; transition-delay: var(--d); }
+.delay-3 { --d: 0.3s; transition-delay: var(--d); }
+.delay-4 { --d: 0.4s; transition-delay: var(--d); }
+.delay-5 { --d: 0.5s; transition-delay: var(--d); }

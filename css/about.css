@@ -826,3 +826,22 @@ body {
     padding: 12px;
   }
 }
+
+/* Animations */
+.scroll-reveal, .reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.scroll-reveal.visible, .reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1, .reveal-delay-1 { --d: 0.1s; transition-delay: var(--d); }
+.delay-2, .reveal-delay-2 { --d: 0.2s; transition-delay: var(--d); }
+.delay-3, .reveal-delay-3 { --d: 0.3s; transition-delay: var(--d); }
+.delay-4 { --d: 0.4s; transition-delay: var(--d); }
+.delay-5 { --d: 0.5s; transition-delay: var(--d); }
