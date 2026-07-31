@@ -441,6 +441,11 @@ img {
   border: 2px solid #0F766E;
 }
 
+/* Mobile-only explore btn – hidden on desktop */
+.btn-explore-mobile {
+  display: none;
+}
+
 .treatments-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -787,6 +792,18 @@ img {
   .t-card--link {
     grid-column: span 2;
   }
+  .treatments-header {
+    flex-direction: row;
+    align-items: center;
+  }
+  /* hide explore btn from header on mobile – shown below grid instead */
+  .treatments-header .btn-explore {
+    display: none;
+  }
+  .btn-explore-mobile {
+    display: inline-flex;
+    margin-top: 20px;
+  }
   .container {
     padding: 0 24px;
   }
@@ -797,6 +814,9 @@ img {
   }
   .testi-card {
     flex: 0 0 calc(100% - 0px);
+  }
+  .testimonials {
+    padding-bottom: 48px;
   }
 
   .about-snippet-grid {
@@ -809,11 +829,35 @@ img {
   .stats-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .gallery-section {
+    padding: 32px 0;
+  }
+  .gallery-header {
+    margin-bottom: 20px;
+  }
+
+  .consultation-heading {
+    font-size: 22px !important;
+    white-space: normal;
+  }
+  .consultation-right {
+    padding: 20px 16px;
+  }
 }
 
 @media (max-width: 480px) {
   .treatments-grid {
     grid-template-columns: 1fr;
+  }
+  .treatments-header .btn-explore {
+    display: none;
+  }
+  .btn-explore-mobile {
+    display: inline-flex;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
   }
 
   .hero-title {
@@ -1305,7 +1349,6 @@ img {
   line-height: 1.2;
   margin-bottom: 32px;
   letter-spacing: -0.01em;
-  white-space: nowrap;
 }
 
 .consultation-left .contact-cards {
