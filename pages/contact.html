@@ -62,30 +62,57 @@
         "@type": "ContactPage",
         "name": "Contact Sans Dental Studio",
         "url": "https://sansdentalstudio.com/pages/contact.html",
-        "description": "Get in touch with Sans Dental Studio, Thoraipakkam, Chennai to book a dental appointment or enquire about our services.",
-        "mainEntity": {
-          "@type": "Dentist",
-          "name": "Sans Dental Studio",
-          "@id": "https://sansdentalstudio.com/#dentist",
-          "telephone": "+919941055547",
-          "email": "sansdentalstudio@gmail.com",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "No 429, 1st floor Sri Vidhya Avenue",
-            "addressLocality": "Thoraipakkam",
-            "addressRegion": "Tamil Nadu",
-            "postalCode": "600097",
-            "addressCountry": "IN"
+        "description": "Get in touch with Sans Dental Studio in Thoraipakkam or Kancheepuram, Chennai to book a dental appointment or enquire about services.",
+        "mainEntity": [
+          {
+            "@type": "Dentist",
+            "name": "Sans Dental Studio – Thoraipakkam Clinic",
+            "@id": "https://sansdentalstudio.com/#dentist",
+            "telephone": "+919941055547",
+            "email": "sansdentalstudio@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "No 429, 1st floor Sri Vidhya Avenue",
+              "addressLocality": "Thoraipakkam",
+              "addressRegion": "Tamil Nadu",
+              "postalCode": "600097",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 12.9349056,
+              "longitude": 80.2304055
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+                "opens": "10:00",
+                "closes": "14:00"
+              }
+            ]
           },
-          "openingHoursSpecification": [
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-              "opens": "10:00",
-              "closes": "14:00"
-            }
-          ]
-        }
+          {
+            "@type": "Dentist",
+            "name": "Sans Dental Studio – Kancheepuram Branch",
+            "telephone": "+919941055547",
+            "email": "sansdentalstudio@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Kancheepuram",
+              "addressRegion": "Tamil Nadu",
+              "addressCountry": "IN"
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+                "opens": "10:00",
+                "closes": "14:00"
+              }
+            ]
+          }
+        ]
       }
     ]
     </script>

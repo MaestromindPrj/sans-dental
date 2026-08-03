@@ -71,7 +71,7 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Dentist",
+      "@type": ["Dentist", "MedicalClinic"],
       "name": "Sans Dental Studio",
       "description": "Boutique dental clinic in Thoraipakkam and Kancheepuram, Chennai. Specialising in cosmetic dentistry, laser treatments, root canals, orthodontics and dental implants under Dr. Hamsapriya R.",
       "image": "https://sansdentalstudio.com/assets/images/hero-img.png",
@@ -102,6 +102,37 @@
         "latitude": 12.9349056,
         "longitude": 80.2304055
       },
+      "location": [
+        {
+          "@type": "Dentist",
+          "name": "Sans Dental Studio – Thoraipakkam Clinic",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "No 429, 1st floor Sri Vidhya Avenue",
+            "addressLocality": "Thoraipakkam",
+            "addressRegion": "Tamil Nadu",
+            "postalCode": "600097",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 12.9349056,
+            "longitude": 80.2304055
+          },
+          "telephone": "+919941055547"
+        },
+        {
+          "@type": "Dentist",
+          "name": "Sans Dental Studio – Kancheepuram Branch",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Kancheepuram",
+            "addressRegion": "Tamil Nadu",
+            "addressCountry": "IN"
+          },
+          "telephone": "+919941055547"
+        }
+      ],
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
@@ -143,14 +174,35 @@
         "https://in.linkedin.com/in/hamsa-priya-ba69a31a7"
       ],
       "founder": {
-        "@type": "Person",
+        "@type": "Physician",
         "name": "Dr. Hamsapriya R",
-        "jobTitle": "Dentist – BDS",
+        "jobTitle": "Lead Dentist & Founder (BDS)",
         "description": "Dr. Hamsapriya R is a highly experienced cosmetic and general dentist with 15+ years of clinical expertise.",
+        "medicalSpecialty": [
+          "Dentistry",
+          "Cosmetic Dentistry",
+          "Laser Dentistry",
+          "Endodontics",
+          "Orthodontics"
+        ],
         "alumniOf": {
           "@type": "EducationalOrganization",
           "name": "Bachelor of Dental Surgery (BDS)"
         }
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Comprehensive Dental Services",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cosmetic Dentistry"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Laser Dentistry"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Root Canal Treatment"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Dental Implants"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Orthodontic Care"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ultrasonic Scaling"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Teeth Whitening"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Dentures & Restorations"}}
+        ]
       },
       "medicalSpecialty": "Dentistry",
       "knowsAbout": [

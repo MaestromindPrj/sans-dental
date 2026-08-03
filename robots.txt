@@ -18,5 +18,8 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-# Link to the sitemap file
+# Link to the sitemap file and AI documentation (llms.txt)
 Sitemap: https://sansdentalstudio.com/sitemap.xml
+# AI Documentation for LLMs & RAG Engines
+# https://sansdentalstudio.com/llms.txt
+
