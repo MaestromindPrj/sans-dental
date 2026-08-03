@@ -19,7 +19,7 @@
   const track   = document.getElementById('testiTrack');
   const prevBtn = document.getElementById('prevBtn');
   const nextBtn = document.getElementById('nextBtn');
-  if (!track) return;
+  if (!track || !prevBtn || !nextBtn) return;
 
   let idx = 0;
 
