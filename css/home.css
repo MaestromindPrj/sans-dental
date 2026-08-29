@@ -244,8 +244,8 @@ img {
 .hero-bottom-row {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 32px;
+  justify-content: space-between;
+  gap: 24px;
   width: 100%;
   margin-top: 8px;
 }
@@ -791,6 +791,7 @@ img {
   .hero-locations {
     color: #ffffff;
     text-align: right;
+    font-size: 13px;
   }
 
   .btn-cta-dark {
@@ -802,12 +803,6 @@ img {
   }
   .btn-cta-dark:hover {
     background: #ffffff;
-  }
-
-  .hero-locations {
-    text-align: left;
-    color: rgba(255, 255, 255, 0.85);
-    font-size: 13px;
   }
 
   .treatments-grid {
