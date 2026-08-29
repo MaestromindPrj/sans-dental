@@ -73,9 +73,10 @@ body {
 }
 
 .nav-logo-img {
-  height: 42px;
-  width: auto;
+  width: 130px;
+  height: auto;
   object-fit: contain;
+  display: block;
 }
 
 .nav-links {
@@ -291,8 +292,8 @@ body {
 }
 
 .footer-logo-img {
-  height: 48px;
-  width: auto;
+  width: 130px;
+  height: auto;
   object-fit: contain;
   display: block;
 }

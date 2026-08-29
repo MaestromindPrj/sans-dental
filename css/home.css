@@ -100,8 +100,8 @@ img {
 }
 
 .nav-logo-img {
-  height: 42px;
-  width: auto;
+  width: 130px;
+  height: auto;
   object-fit: contain;
   display: block;
 }
@@ -201,24 +201,35 @@ img {
 
 .hero-left {
   background: #ffffff;
-  padding: 60px 80px 48px 80px;
+  padding: 50px 80px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.hero-logo-wrapper {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.hero-logo-img {
+  width: clamp(200px, 18vw, 280px);
+  height: auto;
+  object-fit: contain;
+  display: block;
+  filter: brightness(0);
 }
 
 .hero-title {
   font-family: var(--font);
   font-weight: 800;
-  font-size: clamp(38px, 4.5vw, 64px);
-  line-height: 1.1;
+  font-size: clamp(34px, 3.8vw, 56px);
+  line-height: 1.12;
   color: #000000;
   letter-spacing: -0.02em;
-  margin-top: 20px;
-}
-
-.hero-bottom-content {
-  margin-top: 40px;
+  margin: 0;
 }
 
 .hero-desc {
@@ -226,16 +237,17 @@ img {
   line-height: 1.65;
   color: #444444;
   font-weight: 400;
-  max-width: 400px;
-  margin-bottom: 32px;
+  max-width: 460px;
+  margin: 0;
 }
 
 .hero-bottom-row {
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
   width: 100%;
+  margin-top: 8px;
 }
 
 .btn-cta-dark {
@@ -739,35 +751,46 @@ img {
     position: relative;
     z-index: 2;
     background: transparent;
-    padding: 28px 24px 36px 24px;
+    padding: 32px 24px 36px 24px;
     min-height: calc(100svh - var(--nav-h));
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .hero-logo-img {
+    width: clamp(160px, 46vw, 220px);
+    filter: brightness(0) invert(1);
   }
 
   .hero-title {
-    font-size: clamp(30px, 8vw, 48px);
+    font-size: clamp(28px, 7.5vw, 42px);
     color: #ffffff;
     margin-top: 0;
-    line-height: 1.08;
-  }
-
-  .hero-bottom-content {
-    margin-top: 0;
+    line-height: 1.1;
   }
 
   .hero-desc {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.92);
     max-width: 100%;
-    margin-bottom: 20px;
+    margin: 0;
   }
 
   .hero-bottom-row {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    margin-top: 4px;
+  }
+
+  .hero-locations {
+    color: #ffffff;
+    text-align: right;
   }
 
   .btn-cta-dark {
@@ -945,8 +968,8 @@ img {
 }
 
 .footer-logo-img {
-  height: 48px;
-  width: auto;
+  width: 130px;
+  height: auto;
   object-fit: contain;
   display: block;
 }
