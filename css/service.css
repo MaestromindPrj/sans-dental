@@ -417,7 +417,7 @@ body {
 .service-container {
   max-width: 1200px;
   margin: 80px auto;
-  padding: 0 40px;
+  padding: 0 24px;
 }
 
 
@@ -501,7 +501,7 @@ body {
     width: 100%;
     max-width: 400px;
     height: auto;
-    padding: 32px;
+    padding: 26px;
   }
 
   .image-card {
